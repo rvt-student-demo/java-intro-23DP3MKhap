@@ -6,42 +6,58 @@ public class App
 {
     public static void main( String[] args )
     {
-        // // Make your first Hello World app!
-        // String text = "contains text";
-        // int wholeNumber = 123;
-        // double floatingPoint = 3.141592653;
-        // boolean trueOrFalse = true;
+        // System.out.println("Hello, world!");
 
         Scanner scanner = new Scanner(System.in);
 
-        // System.out.println("Text variable: " + text);
-        // System.out.println("Integer variable: " + wholeNumber);
-        // System.out.println("Floating-point variable: " + floatingPoint);
-        // System.out.println("Boolean: " + trueOrFalse); 
+        // String input = scanner.nextLine();
+
+        // System.out.println(input);
+
+        // System.out.println("Sveiks " + input + "!");
+
+        // String name = "John";
+        // int age = 20;
+        // boolean isOnline = true;
+
+        // String name = scanner.nextLine();
+        // String surname = scanner.nextLine();
+        // String grupa = scanner.nextLine();
+
+        // System.out.println("Students: " + name + " " + surname + ", " + "grupa: " + grupa);
 
 
 
-        // System.out.println("Write text and press enter ");
-        // String text = scanner.nextLine();
-        // System.out.println("You wrote " + text);
 
 
-        // int value = Integer.valueOf(scanner.nextLine());
+        // int a = scanner.nextInt();
+        // int b = scanner.nextInt();
+        // int c = a+b;
 
-        System.out.println("Give the first number:");
-        int x = Integer.valueOf(scanner.nextLine());
-        System.out.println("Give the second number:");
-        int y = Integer.valueOf(scanner.nextLine());
+        // System.out.println(c);
 
-        int plus = x+y;
-        int minuss = x-y;
-        int divide = x*y;
-        double del = (double) x/y;
+        // System.out.println("Give the first number:");
+        // int x = Integer.valueOf(scanner.nextLine());
+        // System.out.println("Give the second number:");
+        // int y = Integer.valueOf(scanner.nextLine());
 
-        System.out.println(x + " + " + y + " = " + plus);
-        System.out.println(x + " - " + y + " = " + minuss);
-        System.out.println(x + " * " + y + " = " + divide);
-        System.out.println(x + " / " + y + " = " + del);
+        // int plus = x+y;
+        // int minuss = x-y;
+        // int divide = x*y;
+        // double del = (double) x/y;
+
+        // System.out.println(x + " + " + y + " = " + plus);
+        // System.out.println(x + " - " + y + " = " + minuss);
+        // System.out.println(x + " * " + y + " = " + divide);
+        // System.out.println(x + " / " + y + " = " + del);
+
+        System.out.println("Give speed:");
+        int speed = scanner.nextInt();
+
+        if (speed > 120) {
+            System.out.println("Speeding ticket!");
+        }
+
 
 
 
