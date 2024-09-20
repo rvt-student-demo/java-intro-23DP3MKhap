@@ -51,17 +51,45 @@ public class App
         // System.out.println(x + " * " + y + " = " + divide);
         // System.out.println(x + " / " + y + " = " + del);
 
-        System.out.println("Give speed:");
-        int speed = scanner.nextInt();
+        // System.out.println("Give speed:");
+        // int speed = scanner.nextInt();
 
-        if (speed > 120) {
-            System.out.println("Speeding ticket!");
-        }
-
-
+        // if (speed > 120) {
+        //     System.out.println("Speeding ticket!");
+        // }
 
 
-        
+        // int number = scanner.nextInt();
+
+        // if (number == 1) {
+        //     System.out.println("The number is one");
+        // } else if (number == 2) {
+        //     System.out.println("The given number is two");
+        // } else if (number == 3) {
+        //     System.out.println("The number must be three!");
+        // } else {
+        //     System.out.println("Something else!");
+        // }
+
+        System.out.println("Give points [0-100]");
+        int x = scanner.nextInt();
+        if (x < 0) {
+            System.out.println("Impossible");
+        } else if (x <= 49 ){
+            System.out.println("Failed");
+        } else if (x <= 59 ){
+            System.out.println("1");
+        } else if (x <= 69 ){
+            System.out.println("2");
+        } else if (x <= 79 ){
+            System.out.println("3");
+        } else if (x <= 89 ){
+            System.out.println("4");
+        } else if (x <= 100 ){
+            System.out.println("5");
+        } else if (x > 100 ){
+            System.out.println("Incredible!");
+        }          
 
 
     }}
