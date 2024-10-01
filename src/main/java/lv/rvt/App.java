@@ -108,28 +108,31 @@ public class App
         // }
 
 
-        int numsk = 0;
-        int numsum = 0;
+        // int numsk = 0;
+        // int numsum = 0;
 
-        while (true) {
-            System.out.println("Give number:");
-            int number = scanner.nextInt();
-            if (number != 0){
-                numsk += 1;
-                numsum += number;
+        // while (true) {
+        //     System.out.println("Give number:");
+        //     int number = scanner.nextInt();
+        //     if (number != 0){
+        //         numsk += 1;
+        //         numsum += number;
     
-            }
+        //     }
 
-            else if (number == 0){
-                System.out.println("Number of numbers: " + numsk);
-                System.out.println("Sum of the numbers: " + numsum);
-                break;
-            }
+        //     else if (number == 0){
+        //         System.out.println("Number of numbers: " + numsk);
+        //         System.out.println("Sum of the numbers: " + numsum);
+        //         break;
+        //     }
             
 
+        // }
+
+        int x = scanner.nextInt();
+        for (int y = 0; y < x+1; y++) {
+            System.out.println(y);
         }
-
-
 
 
 
