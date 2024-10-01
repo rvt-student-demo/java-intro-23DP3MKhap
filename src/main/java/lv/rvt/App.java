@@ -129,12 +129,16 @@ public class App
 
         // }
 
+        // int x = scanner.nextInt();
+        // for (int y = 0; y < x+1; y++) {
+        //     System.out.println(y);
+        // }
+
+        System.out.println("Last number?");
         int x = scanner.nextInt();
-        for (int y = 0; y < x+1; y++) {
-            System.out.println(y);
+        int sum = 0;
+        for (int y = 1; y < x+1; y++ ) {
+        sum += y;
         }
-
-
-
-
+        System.out.println(sum);
     }}
