@@ -134,11 +134,62 @@ public class App
         //     System.out.println(y);
         // }
 
-        System.out.println("Last number?");
-        int x = scanner.nextInt();
+        // System.out.println("Last number?");
+        // int x = scanner.nextInt();
+        // int sum = 0;
+        // for (int y = 1; y < x+1; y++ ) {
+        // sum += y;
+        // }
+        // System.out.println(sum);
+
+
+        // for (int y = 10; y <=100; y += 10) {
+        //     System.out.println(y);
+        // }
+
+        // int y = 10;
+        // while (y <= 100){
+        // System.out.println(y);
+        // y+=10;
+        // }
+
+
+
+
+        int numb = 0;
         int sum = 0;
-        for (int y = 1; y < x+1; y++ ) {
-        sum += y;
+        int even = 0;
+        int odd = 0;
+        System.out.println("Give numbers:");
+        while (true){
+            int x = scanner.nextInt();
+
+            if (x == -1) {
+                break;
+            }
+            
+
+            if (x%2 == 0){
+                even += 1;
+            }
+
+            
+            if (x%2 != 0){
+                odd += 1;
+            }
+            
+            numb++;
+            sum += x;
+
+            
         }
-        System.out.println(sum);
+
+        double avg = (double)sum / numb;
+        System.out.println("Thx! Bye!");
+        System.out.println("Sum: " + sum);
+        System.out.println("Numbers: " + numb);
+        System.out.println("Average: " + avg);
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
+
     }}
