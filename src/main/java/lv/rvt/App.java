@@ -156,40 +156,70 @@ public class App
 
 
 
-        int numb = 0;
-        int sum = 0;
-        int even = 0;
-        int odd = 0;
-        System.out.println("Give numbers:");
-        while (true){
-            int x = scanner.nextInt();
+        // int numb = 0;
+        // int sum = 0;
+        // int even = 0;
+        // int odd = 0;
+        // System.out.println("Give numbers:");
+        // while (true){
+        //     int x = scanner.nextInt();
 
-            if (x == -1) {
-                break;
+        //     if (x == -1) {
+        //         break;
+        //     }
+            
+
+        //     if (x%2 == 0){
+        //         even += 1;
+        //     }
+
+            
+        //     if (x%2 != 0){
+        //         odd += 1;
+        //     }
+            
+        //     numb++;
+        //     sum += x;
+
+            
+        // }
+
+        // double avg = (double)sum / numb;
+        // System.out.println("Thx! Bye!");
+        // System.out.println("Sum: " + sum);
+        // System.out.println("Numbers: " + numb);
+        // System.out.println("Average: " + avg);
+        // System.out.println("Even: " + even);
+        // System.out.println("Odd: " + odd);
+
+
+
+    // System.out.println("How many times?");
+    // int x = scanner.nextInt();
+    // for (int y = 0; y < x; y++){
+    //     printText();
+    // }
+
+    int beginning = scanner.nextInt();
+    int end = scanner.nextInt();
+
+    divisibleByThreeInRange(beginning, end);
+    }
+
+
+    // Def tut
+    public static void printText() {
+        System.out.println("In a hole in the ground there lived a method");
+    }
+
+    public static void divisibleByThreeInRange(int beginning, int end){
+
+        for (int i = beginning; i <= end; i++){
+            if (i%3 == 0){
+                System.out.println(i);
             }
-            
-
-            if (x%2 == 0){
-                even += 1;
-            }
-
-            
-            if (x%2 != 0){
-                odd += 1;
-            }
-            
-            numb++;
-            sum += x;
-
-            
         }
+        
+    }
 
-        double avg = (double)sum / numb;
-        System.out.println("Thx! Bye!");
-        System.out.println("Sum: " + sum);
-        System.out.println("Numbers: " + numb);
-        System.out.println("Average: " + avg);
-        System.out.println("Even: " + even);
-        System.out.println("Odd: " + odd);
-
-    }}
+    }
