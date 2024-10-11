@@ -14,7 +14,9 @@ public class App
     
             // Stars.printRectangle(17, 3);
     
-            Stars.printTriangle(4);
+            // Stars.printTriangle(4);
+
+            Stars.christmasTree(15);
 
     
     }
