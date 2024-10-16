@@ -2,22 +2,27 @@ package lv.rvt;
 
 import java.util.Scanner;
 
+import java.util.ArrayList;
+
 public class App 
 {
     public static void main( String[] args )
     {
-            // Stars.printStars(5);
-            // Stars.printStars(3);
-            // Stars.printStars(9);
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> names = new ArrayList<>();
     
-            // Stars.printSquare(4);
-    
-            // Stars.printRectangle(17, 3);
-    
-            // Stars.printTriangle(4);
+        String name = "";
+        while(true){
+            name = scanner.nextLine();
+            names.add(name);
+            if(name == ""){
+                break;
+            }
 
-            Stars.christmasTree(15);
+            
 
-    
+        }
+        System.out.println(names.get(2));
+
     }
 }
