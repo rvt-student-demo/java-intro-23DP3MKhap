@@ -9,20 +9,18 @@ public class App
     public static void main( String[] args )
     {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> names = new ArrayList<>();
-    
-        String name = "";
+        ArrayList<Integer> skaitlis = new ArrayList<>();
+        int summ = 0;
+        int sk = 0;
         while(true){
-            name = scanner.nextLine();
-            names.add(name);
-            if(name == ""){
+            sk = scanner.nextInt();
+            skaitlis.add(sk);
+            summ += sk;
+            if(sk == 0){
                 break;
             }
-
-            
-
         }
-        System.out.println(names.get(2));
+        System.out.println(summ);
 
     }
 }
