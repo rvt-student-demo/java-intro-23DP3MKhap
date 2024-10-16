@@ -16,12 +16,12 @@ public class Stars {
 
     
     for (int i = 0; i<height; i++){
-        printSpaces(height-i);
+        printSpaces(height-i-1);
         printStars(star);
         star += 2;
         }
     for (int i = 0; i<2; i++){
-        printSpaces(height-1);
+        printSpaces(height-2);
         printStars(3);
     }
 
