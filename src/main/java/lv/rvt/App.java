@@ -17,16 +17,21 @@ public class App
     public static void main( String[] args )
 
     {
-        Account mikhAccount = new Account("Mikhail's account", 100.00);
-        
+        Account mattAccount = new Account("Matthew's account", 1000.00);
+        Account myAccount = new Account("My account", 0.00);
         System.out.println("Initial state");
-        System.out.println(mikhAccount);
+        System.out.println(mattAccount);
+        System.out.println(myAccount);
         
-        mikhAccount.deposit(20);
-        System.out.println("The balance of Mikhail's account is now: " + mikhAccount.balance());
+        mattAccount.withdraw(100);
+        System.out.println("The balance of Matthew's account is now: " + mattAccount.balance());
+
+        myAccount.deposit(100);
+        System.out.println("The balance of My account is now: " + myAccount.balance());
         
         System.out.println("End state");
-        System.out.println(mikhAccount);
+        System.out.println(myAccount);
+        System.out.println(mattAccount);
 
     }
 }
