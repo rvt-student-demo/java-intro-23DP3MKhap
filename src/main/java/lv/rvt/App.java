@@ -19,29 +19,16 @@ public class App
     public static void main( String[] args )
 
     {
-        PaymentCard paulcard = new PaymentCard(20);
-        PaymentCard mattcard = new PaymentCard(30);
-        
-        paulcard.eatHeartily();
-        mattcard.eatAffordably();
-    
-        System.out.println("Paul: The card has a balance of " + paulcard);
-        System.out.println("Matt: The card has a balance of " + mattcard);
+        DecreasingCounter counter = new DecreasingCounter(100);
 
-        paulcard.addMoney(20.0);
-        mattcard.eatHeartily();
-    
-        System.out.println("Paul: The card has a balance of " + paulcard);
-        System.out.println("Matt: The card has a balance of " + mattcard);
+        counter.printValue();
 
-        paulcard.eatAffordably();
-        paulcard.eatAffordably();
+        counter.reset();
+        counter.printValue();
 
-        mattcard.addMoney(50.0);
-    
-        System.out.println("Paul: The card has a balance of " + paulcard);
-        System.out.println("Matt: The card has a balance of " + mattcard);
-    }
+        counter.decrement();
+        counter.printValue();
 
 
     }
+}
