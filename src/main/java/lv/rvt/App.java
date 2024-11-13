@@ -19,35 +19,29 @@ public class App
     public static void main( String[] args )
 
     {
-        Scanner scanner = new Scanner(System.in);
-        Statistics statistics = new Statistics();
-        int evensum = 0;
-        int oddsum = 0;
+        PaymentCard paulcard = new PaymentCard(20);
+        PaymentCard mattcard = new PaymentCard(30);
         
-        
-        System.out.println("Enter numbers:");
-        
-        
-        
-        while(true){
-            int inp = scanner.nextInt();
-            if (inp == -1){
-                break;
-            }
-            if (inp % 2 == 0){
-                evensum += inp;
-            }
-            else{
-                oddsum += inp;
-            }
-            statistics.addNumber(inp);
+        paulcard.eatHeartily();
+        mattcard.eatAffordably();
+    
+        System.out.println("Paul: The card has a balance of " + paulcard);
+        System.out.println("Matt: The card has a balance of " + mattcard);
 
-        }
+        paulcard.addMoney(20.0);
+        mattcard.eatHeartily();
+    
+        System.out.println("Paul: The card has a balance of " + paulcard);
+        System.out.println("Matt: The card has a balance of " + mattcard);
 
-        System.out.println("Sum: " + statistics.sum());
-        System.out.println("Sum of even numbers: " + evensum);
-        System.out.println("Sum of odd numbers: " + oddsum);
+        paulcard.eatAffordably();
+        paulcard.eatAffordably();
+
+        mattcard.addMoney(50.0);
+    
+        System.out.println("Paul: The card has a balance of " + paulcard);
+        System.out.println("Matt: The card has a balance of " + mattcard);
+    }
 
 
     }
-}
