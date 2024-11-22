@@ -17,18 +17,13 @@ public class App
     public static void main( String[] args )
 
     {
-        Timer timer = new Timer();
+        Product tapeMeasure = new Product("Tape measure");
+        Product plaster = new Product("Plaster", "home improvement section");
+        Product tyre = new Product("Tyre", 5);
 
-        while (true) {
-            System.out.println(timer);
-            timer.advance();
-        
-            try {
-                Thread.sleep(10);
-            } catch (Exception e) {
-        
-            }
-        }
+        System.out.println(tapeMeasure);
+        System.out.println(plaster);
+        System.out.println(tyre);
 
             
     }
