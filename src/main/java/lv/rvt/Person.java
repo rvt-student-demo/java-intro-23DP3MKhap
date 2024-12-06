@@ -7,11 +7,11 @@ public class Person {
     private int height;
     private int weight;
 
-    public Person(String name) {
+    public Person(String name, int age, int height, int weight) {
         this.name = name;
-        this.age = 0;
-        this.weight = 0;
-        this.height = 0;
+        this.age = age;
+        this.weight = weight;
+        this.height = height;
     }
 
     public void printPerson() {
