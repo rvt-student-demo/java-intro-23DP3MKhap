@@ -2,10 +2,10 @@ package lv.rvt;
 
 public class Box {
 
-    public double width;    
-    public double height;
-    public double length;
-    public double side;
+    private double width;    
+    private double height;
+    private double length;
+    private double side;
 
     public Box(double width, double height, double length){
         this.width = width;
@@ -14,7 +14,7 @@ public class Box {
     }
 
     Box ( double side ){
-        this.side = side;
+        this.side = width;
     }
 
     Box( Box oldBox ){
