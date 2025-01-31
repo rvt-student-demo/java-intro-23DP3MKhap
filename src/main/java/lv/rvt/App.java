@@ -10,6 +10,11 @@ import java.util.ArrayList;
 
 public class App 
 {
+    public static void printPersons(ArrayList<Person> persons) {
+        for (Person person : persons) {
+            System.out.println(person);
+        }
+    }
 
 
 
@@ -17,17 +22,9 @@ public class App
     public static void main( String[] args )
 
     {
-        Box box = new  Box( 2.5, 5.0, 6.0 ) ;
-
-        System.out.println("Box width: " + box.width() + " Box height: " + box.height() + " Box length: " + box.length());
-
-        Box largerbox = box.biggerBox(box);
-        System.out.println("larger width: " + largerbox.width() + " larger height: " + largerbox.height() + " larger length: " + largerbox.length());
-        
-        Box smallerbox = box.biggerBox(box);
-        System.out.println("smaller width: " + smallerbox.width() + " smaller height: " + smallerbox.height() + " smaller length: " + smallerbox.length());
-        
-        System.out.println(largerbox.nests(smallerbox));
-        System.out.println(box.nests(largerbox));
-        }
-}
+        ArrayList<Person> persons = new ArrayList<Person>();
+        persons.add(new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200));
+        persons.add(new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028"));
+    
+        printPersons(persons);
+}}
