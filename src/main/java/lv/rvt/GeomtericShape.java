@@ -2,9 +2,9 @@ package lv.rvt;
 
 abstract class GeometricShape {
 
-    public abstract void getArea();
+    public abstract double getArea();
 
-    public abstract void getPerimeter();
+    public abstract double getPerimeter();
 
     public abstract void displayInfo();
 

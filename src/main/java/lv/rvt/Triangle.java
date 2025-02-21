@@ -2,22 +2,22 @@ package lv.rvt;
 
 public class Triangle extends GeometricShape{
 
-    private double cathtetus1;
-    private double cathtetus2;
-    private double hipotenuza;
+    private double side1;
+    private double side2;
+    private double side3;
 
-    public Triangle(double cathtetus1, double cathtetus2, double hipotenuza){
-        this.cathtetus1 = cathtetus1;
-        this.cathtetus2 = cathtetus2;
-        this.hipotenuza = hipotenuza;
+    public Triangle(double  side1, double  side2, double  side3){
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
     }
 
-    public void getArea() {
-        
+    public double getArea() {
+        return 0.0;
     }
     
-    public void getPerimeter(){
-        
+    public double getPerimeter(){
+        return 0.0;
     }
     
     public void displayInfo(){
