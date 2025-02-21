@@ -41,5 +41,26 @@ public class PersonManager {
     
     }
 
-
-}
+    public static void printPersonTable() throws Exception{
+        BufferedReader reader = Helper.getReader("persons.csv");
+        String line;
+    
+        // Skip the header
+        reader.readLine();  
+    
+        System.out.printf("%-20s %-5s %-20s%n", "Name", "Age", "Adres");  
+        System.out.println("------------------------------------------------------");
+    
+        while ((line = reader.readLine()) != null) {
+            String[] parts = line.split(",");
+            
+            String name; 
+            String adres;
+            int age;
+            name = parts[0];
+            adres = parts[2];
+            age = Integer.valueOf(parts[1]);
+    
+            System.out.printf("%-20s %-5s %-20s %n", name, age, adres); 
+    }
+}}
